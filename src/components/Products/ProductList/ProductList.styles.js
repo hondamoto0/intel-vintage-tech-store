@@ -22,7 +22,7 @@ const Wrapper = styled.section`
     row-gap: 1.8rem;
     /* align-items: start; */
     @media screen and (min-width: 1279px) {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
   }
 `;

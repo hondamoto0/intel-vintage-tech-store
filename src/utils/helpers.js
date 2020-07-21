@@ -1,5 +1,4 @@
 // helper functions
-import url from "./URL";
 export const featuredProductsFilter = products => {
   const featuredProducts = products.filter(product => product.featured);
   return featuredProducts;

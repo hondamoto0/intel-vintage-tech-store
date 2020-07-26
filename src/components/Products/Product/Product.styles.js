@@ -8,7 +8,10 @@ const Wrapper = styled.article`
     transition: var(--mainTransition);
     display: grid;
     grid-template-rows: auto 1fr;
-    min-height: 19.69rem;
+    min-height: 19.69rem; /* 19.69*/
+    img {
+      min-height: 9rem;
+    }
     &:hover {
       box-shadow: var(--darkShadow);
     }

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, memo } from "react";
 // Components
 import { ProductList } from "../";
 // Context API
@@ -6,7 +6,7 @@ import { ProductContext } from "../../../context/products";
 // Hoc
 import withLoading from "../../../hoc/withLoading";
 const FeaturedProductsContainer = withLoading(ProductList);
-export default function FeaturedProducts() {
+function FeaturedProducts() {
   const { loading, featured } = useContext(ProductContext);
   return (
     <FeaturedProductsContainer
@@ -16,3 +16,5 @@ export default function FeaturedProducts() {
     />
   );
 }
+
+export default memo(FeaturedProducts);

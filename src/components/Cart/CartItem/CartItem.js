@@ -35,7 +35,7 @@ export default function CartItem(props) {
           <button
             type="button"
             className="cart-btn amount-btn"
-            onClick={() => descreseAmount(id)}
+            onClick={() => descreseAmount(id, amount)}
           >
             <FaAngleDown />
           </button>

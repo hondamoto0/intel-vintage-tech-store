@@ -5,8 +5,8 @@ export default function Hero({ children }) {
     <Wrapper>
       <div className="hero">
         <div className="banner">
-          <h1>think,code,deploy</h1>
-          <p>embrace your choices - we do</p>
+          <h1>Vintage Store</h1>
+          <p>Laptop , Phone , Radio</p>
           {children}
           {/* children => cho những hero có Button */}
         </div>

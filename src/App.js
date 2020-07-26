@@ -13,13 +13,20 @@ import {
   Products
 } from "./pages";
 //components
-import { Header, Alert, PrivateRoute } from "./components";
+import {
+  Header,
+  Alert,
+  PrivateRoute,
+  ScrollButton,
+  PublicRoute
+} from "./components";
 
 export default function App() {
   return (
     <Router>
       <Header />
       <Alert />
+      <ScrollButton />
       <Switch>
         <Route exact path="/">
           <Home />
@@ -33,9 +40,9 @@ export default function App() {
         <Route path="/cart">
           <Cart />
         </Route>
-        <Route path="/login">
+        <PublicRoute restrict={true} path="/login">
           <Login />
-        </Route>
+        </PublicRoute>
         <Route exact path="/products">
           <Products />
         </Route>

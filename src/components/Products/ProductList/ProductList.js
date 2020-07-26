@@ -3,13 +3,14 @@ import React from "react";
 import { Product } from "../";
 // styled-components
 import Wrapper from "./ProductList.styles";
+import PropTypes from "prop-types";
 
-export default function ProductList(props) {
+function ProductList(props) {
   const { title, products } = props;
   return (
     <Wrapper>
       <section className="section">
-        <h2 className="section-title">{title}</h2>
+        {title && <h2 className="section-title">{title}</h2>}
         <div className="products-center">
           {products.map(product => (
             <Product key={product.id} {...product} />
@@ -19,3 +20,4 @@ export default function ProductList(props) {
     </Wrapper>
   );
 }
+export default ProductList;

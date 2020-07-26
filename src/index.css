@@ -221,6 +221,13 @@ Error
 Product List
 ======
 */
+.section-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
 .section {
   padding: 4rem 0;
 }
@@ -232,7 +239,6 @@ Product List
 }
 .product img {
   transition: var(--mainTransition);
-  min-height: 9rem;
 }
 
 /* 
@@ -456,24 +462,7 @@ Checkout
 Scroll Button
 ======
 */
-.scroll-btn {
-  position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  background: var(--mainBlack);
-  color: var(--mainWhite);
-  z-index: -100;
-  opacity: 0;
-  transition: var(--mainTransition);
-  font-size: 2rem;
-  line-height: 0;
-  padding: 0.3rem 0.5rem;
-  cursor: pointer;
-}
-.show-scroll-btn {
-  z-index: 100;
-  opacity: 1;
-}
+
 /* 
 ====== 
 Pagination Buttons
@@ -533,11 +522,11 @@ Filters Section
 ======
 */
 .filters-section {
-  width: var(--smallWidth);
+  /* width: var(--smallWidth); */
   margin: 0 auto;
   max-width: 25rem;
-  padding-top: 4rem;
-  margin-bottom: -4rem;
+  padding-top: 2rem;
+  /* margin-bottom: -4rem; */
 }
 .filters-form {
   display: grid;

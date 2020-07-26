@@ -6,13 +6,16 @@ import App from "./App";
 import { ProductProvider } from "./context/products";
 import { CartProvider } from "./context/cart";
 import { UserProvider } from "./context/user";
+import { ScrollProvider } from "./context/scroll";
 ReactDOM.render(
   <UserProvider>
-    <ProductProvider>
-      <CartProvider>
-        <App />
-      </CartProvider>
-    </ProductProvider>
+    <ScrollProvider>
+      <ProductProvider>
+        <CartProvider>
+          <App />
+        </CartProvider>
+      </ProductProvider>
+    </ScrollProvider>
   </UserProvider>,
   document.getElementById("root")
 );

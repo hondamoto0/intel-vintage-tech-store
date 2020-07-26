@@ -37,7 +37,7 @@ const Filters = () => {
             >
               <option value="all">all</option>
               <option value="phone">phone</option>
-              <option value="computer">computer</option>
+              <option value="laptop">laptop</option>
               <option value="radio">radio</option>
             </select>
           </div>
